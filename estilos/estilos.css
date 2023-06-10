@@ -1,0 +1,91 @@
+*{ /*Lenguaje css*/
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Open Sans",Arial,sans-serif;
+	font-size: 16px;
+}
+.contenedor{
+	/*background: gray;*/
+	width: 90%;
+	max-width:1000px;
+}
+
+/*hearder*/
+header{
+	width: 100%;
+	background: url('../img/111.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center 0;
+}
+
+header .contenedor{
+	height: 700px;
+}
+header .menu{
+	width: 100%;
+	text-align: right;
+
+}
+header .menu a{ /*Esto es para poner distintas propiedades a la etiqueta a de la clase menu, todo lo que este dentro esa etiqueta cambiara igual*/
+	color: #fff5e0;
+	font-size: 20px;
+	display: inline-block; /*bloques como ajedrez*/
+	margin: 40px 20px;
+	text-decoration: none;
+	position: relative;
+}
+header .menu a:hover{ /*Esto es para que cuando pases el mouse sobre la etiqueta a, se subraye automaticamente*/
+	text-decoration: underline; 
+}
+header .textos{
+	width: 100%;
+	color: #fff5e0;
+	position: absolute;
+	top: 50%; /*Distancia al borde*/
+	margin-top: -52px; /*Cuando existe un empalme, el signo negativo es para que no se empalme el texto*/
+}
+header .textos .nombre{
+	font-size: 50px;
+	font-weight: 600px; /*Anchura, que tan gordita estara*/
+}
+header .textos .nombre span{
+	font-weight: 300px;
+}
+header .textos h3{
+	font-size: 25px;
+	font-style: italic;
+}
+/*---------MAIN---------*/
+.main{
+	background: url('../img/18.jpg');
+	background-repeat: repeat;
+}
+.main .acerca_de .contenedor{
+	overflow: visible; /* que esta mas grande */
+	position: relative;
+}
+.main .acerca_de .foto img{
+	width: 100%;
+	vertical-align: top; /*Te ubica hacia el margen*/
+}
+.main .acerca_de article{
+	background: #cba075;
+	padding: 40px;
+	width: 50%;
+	position: relative;
+	top: 500px;
+	float: right; /*Permite que un elemento de la parte inferior se ubique a la derecha, uno detras de otro*/
+	z-index: 1; /*Quien es el que va a comenzar, me da un orden*/
+}
+.main .acerca_de article h3{
+	font-size: 50px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+.main .acerca_de article p{
+	line-height: 28px;
+	margin-bottom: 15px;
+}
